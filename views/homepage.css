@@ -1,0 +1,195 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+    font-weight:normal;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+#verticlenavbar{
+    height:200px;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    animation:imganimation 8s ease-in-out 1;
+  
+        #home{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            border:none;
+            height:50px;
+            width:150px;
+            border-radius: 30px;
+        }
+        #home:hover{
+            animation:explore 1.5s normal 1;
+            transform: scale(1.2);
+        }
+        #NEWS{
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:50px;
+            width:150px;
+            border-radius: 30px;
+            border:none;
+        }
+        #NEWS:hover{
+            animation:explore 1.5s normal 1;
+            transform: scale(1.2);
+        }
+        #forum{
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:50px;
+            width:150px;
+            border-radius: 30px;
+            border:none;
+        }
+        #forum:hover{
+            animation:explore 1.5s normal 1;
+            transform: scale(1.2);
+        }
+        #profile{
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:50px;
+            width:150px;
+            border-radius: 30px;
+            border:none;
+        }
+        #profile:hover{
+            animation:explore 1.5s normal 1;
+            transform: scale(1.2);
+        }     
+}
+a{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-color: black;
+    color:white;
+    height: 50%;
+    width:50%;
+    font-size: larger;
+}
+
+#upload{
+    height:600px;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    /* animation:imganimation 8s ease-in-out 1; */
+
+   #uploadpic{
+    border: 2px solid black;
+    border-radius: 20px;
+    height : 300px;
+    width: 400px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+   }
+}
+#para{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:60px;
+    width:190px;
+    border-radius: 50px;
+    a{
+        font-size: larger;
+    }
+}
+/* #para:hover{
+    animation:explore 1.5s normal 1;
+    transform: scale(1.2);
+} */
+
+#settingsnsupport{
+    height:180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation:imganimation 8s ease-in-out 1;
+  
+    #settings{
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:50px;
+        width:150px;
+        border-radius: 30px;
+        border:none;
+        margin-right: 50px;
+    }
+    #settings:hover{
+        animation:explore 1.5s normal 1;
+        transform: scale(1.2);
+    }
+    #support{
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:50px;
+        width:150px;
+        border-radius: 30px;
+        border:none;
+        margin-left: 50px;
+    }
+    #support:hover{
+        animation:explore 1.5s normal 1;
+        transform: scale(1.2);
+    }
+}
+
+#matter{
+    margin-top: 3px;
+
+}
+
+
+@keyframes explore{
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(1.2);
+    }
+}
+
+
+@keyframes imganimation{
+    0%{
+        
+        transform:scale(0);
+    }
+    25%{
+        
+        transform:scale(1);
+    }
+}
+
+@keyframes shadowanimation{
+    0%{
+        box-shadow: none;
+    }
+    25%{
+        box-shadow: 0px 0px 50px 5px pink;
+    }
+}

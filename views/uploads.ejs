@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="uploads.css">
+</head>
+<body>
+    <div id="headingP">
+        <div id="headingC1">
+            <div id="headingC2">
+                <h2>Upload image</h2>
+            </div>
+        </div>
+    </div>
+    
+   <div id="bodyP">
+    <div id="bodyC">
+        <div id="form">
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <div id="description">
+                    <label for="name">Description:</label>
+                    <input type="text" name="name" id="name"/>
+                </div>
+                <div id="upload-image">
+                    <label for="image">Image:</label>
+                    <input type="file" name="image" id="image"/>
+                </div>
+                <div id="submit">
+                    <button type="submit">upload image</button>
+                </div>
+                </form>
+        </div>
+        
+    </div>
+   </div>

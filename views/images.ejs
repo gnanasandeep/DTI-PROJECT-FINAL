@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uploaded Images</title>
+    <style>
+        #headingP{
+            width:99vw;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: black; */
+            /* border-radius: 25px; */
+        }
+        #headingC{
+            width:25vw;
+            text-align: center;
+            border-radius: 50px;
+            background-color: black;
+            color:white;
+            font-size: medium;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(1);
+            grid-gap: 5px;
+            
+        }
+
+        img {
+            width: 20%;
+            /* height: 50%; */
+            background-size: cover;
+            
+        }
+        #grid{
+            display: flex;
+            /* background-color:antiquewhite; */
+            /* width:50% */
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            margin:30px;
+            
+        }
+        #des{
+            display: inline;
+            margin-left:30px;
+            margin-top:30px;
+            /* background-color: aqua; */
+            /* border:3px solid black; */
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="headingP">
+        <div id="headingC">
+            <h1>Uploaded Images</h1>
+        </div>
+    </div>
+    <hr/>
+    <% if (images.length > 0) { %>
+        <div class="grid-container">
+            <% images.forEach((image) => { %>
+                <div id="grid">
+                    <img src="data:<%= image.image.contentType %>;base64,<%= image.image.data.toString('base64') %>">
+                    <div id="des">
+                        <%= image.name %>
+                    </div>
+                </div>
+            <% }); %>
+        </div>
+    <% } else { %>
+        <p>No images uploaded yet</p>
+    <% } %>
+</body>
+</html>
+
